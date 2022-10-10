@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var red: Double = 100.0
+    @State private var green: Double = 140.0
+    @State private var blue: Double = 40.0
+    
+    @State private var savedRed: Double = 100.0
+    @State private var savedGreen: Double = 140.0
+    @State private var savedBlue: Double = 40.0
+    
+    func saveColor() {
+        savedRed = red / 255
+        savedGreen = green / 255
+        savedBlue = blue / 255
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color(.darkGray)
+            VStack {
+                ColorView(red: red/255, green: green/255, blue: blue/255)
+                ColorView(red: savedRed, green: savedGreen, blue: savedBlue)
+                ColorSlider(value: $red, textColor: .red)
+                ColorSlider(value: $green, textColor: .green)
+                ColorSlider(value: $blue, textColor: .blue)
+                
+                Button(action: {
+                    saveColor()
+                }, label: {
+                    Text("SAVE COLOR")
+                })
+            }
+                .padding()
         }
-        .padding()
+        .ignoresSafeArea()
     }
 }
 
