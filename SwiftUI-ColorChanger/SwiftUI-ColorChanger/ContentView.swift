@@ -29,9 +29,9 @@ struct ContentView: View {
             VStack {
                 ColorView(red: red/255, green: green/255, blue: blue/255)
                 ColorView(red: savedRed, green: savedGreen, blue: savedBlue)
-                ColorSlider(value: $red, textColor: .red)
-                ColorSlider(value: $green, textColor: .green)
-                ColorSlider(value: $blue, textColor: .blue)
+                ColorSlider(value: $red, textValue: String(red), textColor: .red)
+                ColorSlider(value: $green, textValue: String(green), textColor: .green)
+                ColorSlider(value: $blue, textValue: String(blue), textColor: .blue)
                 
                 Button(action: {
                     saveColor()
