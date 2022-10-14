@@ -11,6 +11,8 @@
 		1810496A28F32E1E001A6CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810496928F32E1E001A6CF1 /* ContentView.swift */; };
 		1810496C28F32E22001A6CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1810496B28F32E22001A6CF1 /* Assets.xcassets */; };
 		1810496F28F32E22001A6CF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1810496E28F32E22001A6CF1 /* Preview Assets.xcassets */; };
+		1810497628F3307A001A6CF1 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810497528F3307A001A6CF1 /* ColorView.swift */; };
+		1810497828F33355001A6CF1 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810497728F33355001A6CF1 /* ColorSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1810496928F32E1E001A6CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1810496B28F32E22001A6CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1810496E28F32E22001A6CF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1810497528F3307A001A6CF1 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		1810497728F33355001A6CF1 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				1810496728F32E1E001A6CF1 /* SwiftUI_ColorChangerApp.swift */,
 				1810496928F32E1E001A6CF1 /* ContentView.swift */,
+				1810497528F3307A001A6CF1 /* ColorView.swift */,
+				1810497728F33355001A6CF1 /* ColorSlider.swift */,
 				1810496B28F32E22001A6CF1 /* Assets.xcassets */,
 				1810496D28F32E22001A6CF1 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				1810496A28F32E1E001A6CF1 /* ContentView.swift in Sources */,
 				1810496828F32E1E001A6CF1 /* SwiftUI_ColorChangerApp.swift in Sources */,
+				1810497828F33355001A6CF1 /* ColorSlider.swift in Sources */,
+				1810497628F3307A001A6CF1 /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
